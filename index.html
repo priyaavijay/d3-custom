@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Influencer World Map</title>
+    <link rel="stylesheet" href="pramak10.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div id="container">
+        <h1>Social Media<br>Podium</h1>
+        <div id="map"></div>
+        <p>
+            <strong>Marks and Channels</strong><br>This visualization displays the global distribution of top Instagram influencers, represented by colored and sized bubbles. 
+            Each country is color-coded based on the normalized average influence score of its influencers, while individual influencers 
+            are shown as circles positioned around their respective countries when the country is clicked. The size of each circle reflects the influence score, 
+            the color intensity reflects follower count and the thickness of their borders reflect the number of posts they have made on instagram. 
+            Users can click on a country to zoom in and examine influencer details within that country 
+            and click anywhere else on the globe to zoom out of it.
+        </p>
+        <p>
+            **Category of Custom Visualization:** <strong>Combinatorial</strong><br>
+            Our visualization combines geospatial mapping with bubble chart to display multiple attributes per influencer, creating a unique 
+            and informative view of influencer data across the world.
+        </p>
+        <!-- Footer -->
+    <footer>
+        <p>Background image designed by Freepik</p>
+    </footer>
+    </div>
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://unpkg.com/topojson-client@3.0.2/dist/topojson-client.min.js"></script>
+    <script src="pramak10.js"></script>
+</body>
+</html>

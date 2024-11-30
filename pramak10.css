@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    background-image: url('bg.png');
+    /* background-size: cover;  */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll; 
+    background-position: center center;
+    color: #ffffff; 
+    filter:grayscale(40%)
+}
+
+#container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    background-color: rgba(139, 72, 247, 0); 
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 50px auto;
+    color: #ffffff; 
+    /* transform: translateX(200px); */
+    transform:translateY(140px);
+}
+
+h1 {
+    color: #ffffff;
+    padding: 15px 0;
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transform:translateY(15px);
+}
+
+#map {
+    width: 100%;
+    /* height: 650px; */
+    height: 800px;
+    /* background-color: #62bdf1a9; */
+    background-color: "#f0f0f0";
+    display: block;
+    margin: 0 auto;
+}
+.highlighted {
+    fill: #ff6347; 
+    stroke: #000;
+    stroke-width: 1;
+}
+#tooltip {
+    pointer-events: none;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+}
+
+.country-path.highlighted {
+    fill: #ff6347; 
+    stroke: #000;
+    stroke-width: 1;
+}
+
+/*  zoom control container */
+.zoom-controls {
+    position: absolute;
+    top: 200px;
+    right: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+}
+
+.zoom-button {
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.zoom-button:hover {
+    background-color: #f0f0f0;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+footer {
+    background-color: rgba(0, 0, 0, 0.7);  
+    padding: 20px;
+    font-size: 10px;
+    text-align: center;
+}
